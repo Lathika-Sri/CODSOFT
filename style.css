@@ -1,0 +1,278 @@
+body{
+   background-color: black;
+   margin-top: 0;
+   
+}
+html{
+  scroll-behavior: smooth;
+}
+.bgimg{
+    width:1520px;
+    height:500px;
+    position: absolute;
+}
+.bg .navbar{
+    position:fixed;
+    margin-left:1040px;
+    display: flex;
+    font-size: 25px;
+    gap:15px;
+    
+}
+.navbar a{
+  text-decoration: none;
+  color:rgb(228, 223, 223);
+  
+}
+.navbar a:hover{
+  color:rgb(255, 214, 214);
+}
+.text {
+  position: absolute;
+  margin-top:-150px;
+  margin-left:530px;
+  transform: translate(-50%, -50%);
+  background-image: url('img1.png');
+  font-size:3rem;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  background-size: 200%;;
+  
+}
+.desc{
+  position:absolute;
+  font-size:20px;
+  font-family: sans-serif;
+  margin-left:-60px;
+  margin-top:-30px;
+  background-image:linear-gradient(to right, rgb(254, 193, 240),rgb(248, 151, 227));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+}
+.btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+  margin-top: 130px;
+  font-size:15px;
+}
+
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-btn 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-btn {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3e3d3e;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.side{
+  width:350px;
+  height: 250px;
+  position:relative;
+  margin-left:500px;
+  top:60px;
+  animation: zoom 5s infinite;
+  
+}
+
+@keyframes zoom{
+  0%{
+    transform:scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+#about {
+  background-color: #111;
+  color: white;
+  padding: 50px 0;
+  
+  
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  
+}
+
+#about {
+  background-color: #02020225;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: left;
+  margin-left:-600px;
+  margin-top:40px;
+}
+.head{
+  color:#002bff;
+}
+#cover{
+  align-items: right;
+  width:250px;
+  margin-left:85%;
+  margin-top:-250px;
+  box-shadow: 15px 10px rgb(229, 226, 226);
+  border-radius: 2px;
+
+}
+
+.row {
+  margin: 8px -16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color:white;
+}
+.player-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.audio{
+  width:90%;
+}
+
+.column {
+  flex: 1 1 calc(19% - 19px); 
+  margin: 10px;
+  max-width: calc(19% - 19px); 
+  box-sizing: border-box;
+}
+
+
+.content {
+  background-color: rgb(15, 15, 15);
+  text-align: center;
+  padding: 10px;
+  border: 5px solid #100710;
+  border-radius: 8px;
+  box-shadow: 4px 6px rgba(205, 89, 89, 0.1);
+}
+
+
+.album-image {
+  width: 100%;
+  height: 270px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
+
+.fold{
+  color:White;
+  font-size: 20px;
+}
+.vid{
+  margin-left: 300px;
+  border-radius: 15px;
+  border-color: white;
+  background-color: black;
+}
+#footer{
+  font-size: 20px;
+  color:white;
+  justify-content: center;
+  text-align: center;
+}
+.fab{
+  font-size: 30px;
+  width:50px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-spotify{
+  background: green;
+  color:white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+mark{
+  background-color: rgb(183, 183, 98);
+  color:solid black;
+}
+
